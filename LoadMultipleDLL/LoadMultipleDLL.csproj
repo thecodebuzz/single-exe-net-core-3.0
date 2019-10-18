@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ExternalApp1.dll" />
+    <EmbeddedResource Include="Resources\ExternalApp2.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ExternalApp1">
+      <HintPath>Resources\ExternalApp1.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="ExternalApp2">
+      <HintPath>Resources\ExternalApp2.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
